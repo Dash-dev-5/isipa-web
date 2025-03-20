@@ -15,6 +15,7 @@ function App() {
     enrolement1: false,
     enrolement2: false,
     enrolement3: false,
+    biblio: false,
   });
 
   useEffect(() => {
@@ -70,9 +71,9 @@ function App() {
           </div>
 
           <div className="form-group">
-            <label>Email</label>
+            <label>Post-nom</label>
             <input
-              type="email"
+              type="post"
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -118,6 +119,15 @@ function App() {
                 onChange={handleChange}
               />
               Tran_3
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="biblio"
+                checked={formData.biblio}
+                onChange={handleChange}
+              />
+              Biblio
             </label>
           </div>
 
